@@ -1,12 +1,23 @@
 import React from 'react';
+import profile from '../images/profile.jpg'
 
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
+const styles = {
+  profile: {
+    height: '100px',
+    width: '100px',
+    borderRadius: '50%',
+    marginRight: '20px'
+  }
+};
+
+
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     
     <nav className="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
   <div className="container-fluid">
+  <img src={profile} style={styles.profile} alt='' />
     <a className="navbar-brand" href="#">Ben's React Portfolio</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -14,14 +25,7 @@ function NavTabs({ currentPage, handlePageChange }) {
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </a>
+       
         </li>
         <li className="nav-item">
         <a
@@ -31,7 +35,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
-          About
+          About Me
         </a>
         </li>
         <li className="nav-item">
