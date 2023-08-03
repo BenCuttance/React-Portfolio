@@ -8,6 +8,7 @@ import gitLogo from '../images/github.png'
 import linkedInLogo from '../images/linkedin.png'
 
 
+
 const styles = {
   logoImg: {
     height: '50px',
@@ -44,13 +45,13 @@ export default function PortfolioContainer() {
       {renderPage()}
 
       
-      <footer className="position-absolute top-100 start-50 translate-middle">
-      <a href="https://github.com/BenCuttance?tab=repositories">
-      <img src={gitLogo} style={styles.logoImg} alt='' />
-    </a>
-    <a href="https://www.linkedin.com/in/ben-cuttance-72618b286/">
-      <img src={linkedInLogo} style={styles.logoImg} alt='' />
-    </a>
+      <footer className="footer">
+        <a href="https://github.com/BenCuttance?tab=repositories">
+          <img src={gitLogo} style={styles.logoImg} alt='' />
+        </a>
+        <a href="https://www.linkedin.com/in/ben-cuttance-72618b286/">
+          <img src={linkedInLogo} style={styles.logoImg} alt='' />
+        </a>
       </footer>
     </div>
   );

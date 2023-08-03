@@ -13,7 +13,7 @@ export default function Contact() {
         is
         my
         contact 
-        form .</p>
+        form.</p>
 
 
 

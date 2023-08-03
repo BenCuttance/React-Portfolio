@@ -1,5 +1,8 @@
 import React from 'react';
 import profile from '../images/profile.jpg'
+import styleSheet from '../styles/style.css'
+
+
 
 const styles = {
   profile: {
@@ -7,18 +10,24 @@ const styles = {
     width: '100px',
     borderRadius: '50%',
     marginRight: '20px'
+  },
+  title: {
+fontSize: '30px'
+
   }
 };
+
 
 
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     
-    <nav className="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body header" data-bs-theme="dark">
+  
   <div className="container-fluid">
   <img src={profile} style={styles.profile} alt='' />
-    <a className="navbar-brand" href="#">Ben's React Portfolio</a>
+    <a className="navbar-brand" href="#about" style={styles.title}>Ben's React Portfolio</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -64,6 +73,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       <span className="navbar-text">
         Thanks for visiting!
       </span>
+      
     </div>
   </div>
 </nav>
