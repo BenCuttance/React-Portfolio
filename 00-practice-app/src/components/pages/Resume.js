@@ -1,4 +1,5 @@
 import React from 'react';
+// import ResumeTemplate from './public/ResumeTemplate.jpg'
 
 const frontEndSkills = [
   { frontEnd: "HTML (Hypertext Markup Language)" },
@@ -62,7 +63,7 @@ export default function Resume() {
       <h1 className='pageTitle'>Resume</h1>
       <div className="card card text-bg-light mb-3 card-body" style={{ margin: '20px' }}>
         <h2 className="card-title" style={{ lineHeight: '2' }}>Skill set</h2>
-        <h6>Download my <a onClick={() => { downloadFileAtURL(resumeFile) }} href='#resume' >resume here</a>
+        <h6>Download my <a href='ResumeTemplate.jpg' download='Resume Template.jpg' target='_blank' rel='noreferrer'>resume here</a>
         </h6>
         <h5> Course Work </h5>
         <ul>
