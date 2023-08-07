@@ -1,69 +1,87 @@
+.green {
+    background-image: url(../images/lush2.jpg);
 
-.header  {
-   z-index: 12;
-   position: fixed;
+}
+
+.pageTitle {
+    color: white;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.whiteText {
+    color: white;
+}
+
+.card-background {
+    background-color: gray;
+}
+
+.header {
+    z-index: 12;
+    position: fixed;
 }
 
 .image-grid {
     --gap: 16px;
     --num-cols: 4;
-    --row-height: 300px;
-    /* width: 600px; */
-    
-    
-
     max-width: 1200px;
     box-sizing: border-box;
     padding: var(--gap);
     display: flex;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: repeat(var(--num-cols) 1fr);
-    grid-auto-rows: var(--row-height); */
     gap: var(--gap);
 }
-.projectContainer{
-    flex: 1 1 20%;
-    
-}
-.projectContainer:nth-child(-n + 2){
-    flex: 1 1 45%;
-}
-/* .projectContainer:nth-child(2){
-    flex: 1 1 45%;
-} */
 
-.projectSection{
-    
+.projectContainer {
+    flex: 1 1 20%;
+
+}
+
+.projectContainer:nth-child(-n + 2) {
+    flex: 1 1 45%;
+}
+
+.projectSection {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.projectImg{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* .image-grid > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
 
-.image-grid-col-2{
-    grid-column: span 2 ;
+.contactSection {
+
+
+    margin: 20px;
+    padding-bottom: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.image-grid-col-2{
-    grid-row: span 2 ;
+
+.projectImg {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+
+}
+
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-col-2 {
+    grid-row: span 2;
 }
 
 .banner {
-   width: 100%;
-   height: 500px;
-   position: fixed;
-   top: 100px;
-   background-image: url(../images/banner.jpg); 
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 100px;
+    background-image: url(../images/banner.jpg);
 }
 
 .footer {
@@ -75,5 +93,28 @@
     align-items: center;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.other {
+    display: flex;
+}
+
+.roundedEdges {
+    border-radius: 15px;
+}
+
+.mapContainer {
+    display: flex;
     
+}
+
+
+.map {
+    
+    display: flex;
+    align-items: center;
+    width: 400px;
+    max-height: 400px;
+
 }

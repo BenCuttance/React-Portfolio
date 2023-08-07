@@ -1,44 +1,79 @@
 import React from 'react';
-import placeholder from '../../images/react.jpg'
-import styleSheet from '../../styles/style.css'
 
-const projects = [
-  {title: 'one', img: placeholder}, 
-{title: 'two', img: placeholder},
-{title: 'three', img: placeholder},
-{title: 'four', img: placeholder},
-{title: 'five', img: placeholder},
-{title: 'six', img: placeholder},
-{title: 'seven', img: placeholder},
-]
+const frontEndSkills = [
+    { frontEnd: "HTML (Hypertext Markup Language)" },
+    { frontEnd: "CSS (Cascading Style Sheets)" },
+    { frontEnd: "JavaScript" },
+    { frontEnd: "React" },
+    { frontEnd: "Webpack" },
+  ]
+  
+  const backEndSkills = [
+    { BackEnd: "Node.js" },
+    { BackEnd: "MySQK" },
+    { BackEnd: "MongoDB" },
+    { BackEnd: "Express,js" },
+    { BackEnd: 'Restful API\'s' },
+    { BackEnd: 'OAuth' },
+  ]
+  
+  function FrontEnd({ skills }) {
+    return (
+      <ul>
+        <li>
+          {skills.frontEnd}
+        </li>
+      </ul>
+    )
+  }
+  
+  function BackEnd({ skills }) {
+    return (
+      <ul>
+        <li>
+          {skills.BackEnd}
+        </li>
+      </ul>
+    )
+  }
 
-
-function Project ({project}) {
-return (
-  <article className='projectContainer'>
-    {project.title}
-     <img className="projectImg" src={project.img} alt='text'></img>
-  </article>
-)
-}
 export default function Resume() {
   return (
+    <div >
+      <h1 className='pageTitle'>About Page</h1>
+      <div className="card card text-bg-light mb-3 card-body" style={{ margin: '20px' }}>
+        <h2 className="card-title" style={{ lineHeight: '2' }}>Skill set</h2>
+        <h6>Download my <a href='#resume' >resume here</a>
+        </h6>  
+        <h5> Course Work </h5>
+        <ul>
+          <li>Front-end Development </li>
+
+          {frontEndSkills.map((skills, index) => {
+            return <FrontEnd skills={skills} key={index}></FrontEnd>
+          })}
+
+          <li>
+            Back-end Development
+          </li>
+
+          {backEndSkills.map((skills, index) => {
+            return <BackEnd skills={skills} key={index}></BackEnd>
+          })}
+        </ul>
 
 
-
-    <section className='projectSection' >
-      <h2 >Portfolio</h2>
-
-      <div className='image-grid'>
-        {/* <img className='image-grid-col-2 ' src={placeholder} alt='text'></img> */}
-       {projects.map((project, index)=>{
-        return <Project project = {project} key={index}></Project>
-       })}
-        {/* <img className='image-grid-col-2 ' src={placeholder} alt='text'></img> */}
+        <li >Other</li>
+        <ul>
+          <li>
+            Agile management
+          </li>
+          <li>
+            Deployment and usage of GitHub & Heroku
+          </li>
+        </ul>
 
       </div>
-    </section>
-
-
+    </div>
   );
 }
