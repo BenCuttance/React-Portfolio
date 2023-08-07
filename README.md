@@ -33,4 +33,4 @@ This page showcases many of the skills that I have learnt during this course. A 
 
 Github Link: https://github.com/BenCuttance/React-Portfolio
 
-Live URL: 
+Live URL: https://bencuttance.github.io/React-Portfolio/
