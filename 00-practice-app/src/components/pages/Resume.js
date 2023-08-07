@@ -37,7 +37,7 @@ function BackEnd({ skills }) {
   )
 }
 
-const resumeFile = 'http://localhost:3000/#resume/resumeFile_pdf.pdf'
+const resumeFile = 'http://localhost:3000/#resume/ResumeTemplate.jpg'
 
 
 export default function Resume() {
@@ -47,7 +47,7 @@ export default function Resume() {
       const aTag = document.createElement('a')
       aTag.href = blobURL
 
-      aTag.setAttribute('download', 'resumeFile_pdf.pdf')
+      aTag.setAttribute('download', 'ResumeTemplate.jpg')
       document.body.appendChild(aTag)
       aTag.click()
       aTag.remove();
