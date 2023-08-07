@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.94a72b00.css",
-    "main.js": "/React-Portfolio/static/js/main.211985df.js",
+    "main.css": "/React-Portfolio/static/css/main.d289aed5.css",
+    "main.js": "/React-Portfolio/static/js/main.87ed84e4.js",
     "static/media/lush2.jpg": "/React-Portfolio/static/media/lush2.9adbea4b45f6a0e15a91.jpg",
     "static/media/projectInventory.PNG": "/React-Portfolio/static/media/projectInventory.a7b6c38e950d3f6614bf.PNG",
     "static/media/banner.jpg": "/React-Portfolio/static/media/banner.4684b26ccc20435f49be.jpg",
     "static/media/Journey.PNG": "/React-Portfolio/static/media/Journey.5d9372089d0454d9d9ea.PNG",
     "static/media/googleMaps.avif": "/React-Portfolio/static/media/googleMaps.2bf7f48feaeff6a84634.avif",
-    "static/media/profile.jpg": "/React-Portfolio/static/media/profile.8cb226dbbea720d0ee42.jpg",
     "static/media/github.png": "/React-Portfolio/static/media/github.1777e238f99dfbc6b303.png",
     "static/media/comingSoonish.jpg": "/React-Portfolio/static/media/comingSoonish.6739709213a7c59bf9b2.jpg",
     "static/media/nodeJS.jpg": "/React-Portfolio/static/media/nodeJS.b8242131d63ebd3a9774.jpg",
@@ -15,11 +14,11 @@
     "static/media/JavaScript.png": "/React-Portfolio/static/media/JavaScript.439fd978c7363c41b760.png",
     "static/media/ReadMe.png": "/React-Portfolio/static/media/ReadMe.7befd66e78358c58211f.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.94a72b00.css.map": "/React-Portfolio/static/css/main.94a72b00.css.map",
-    "main.211985df.js.map": "/React-Portfolio/static/js/main.211985df.js.map"
+    "main.d289aed5.css.map": "/React-Portfolio/static/css/main.d289aed5.css.map",
+    "main.87ed84e4.js.map": "/React-Portfolio/static/js/main.87ed84e4.js.map"
   },
   "entrypoints": [
-    "static/css/main.94a72b00.css",
-    "static/js/main.211985df.js"
+    "static/css/main.d289aed5.css",
+    "static/js/main.87ed84e4.js"
   ]
 }
