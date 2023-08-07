@@ -1,9 +1,7 @@
 import React from 'react';
-
 import Journey from '../../images/Journey.PNG'
 
-
-
+// About Page
 
 export default function About() {
   return (
@@ -38,7 +36,7 @@ export default function About() {
           </ul>
         </div>
         <div className='mapContainer'>
-          <p> My next planned journey:  Scotland -> England -> Iceland -> Germany -> Switzerland -> Slovenia -> Austria -> Poland -> Czechia -> Back Home
+          <p> My next planned journey:  Scotland -> England -> Iceland -> Germany -> Switzerland -> Slovenia -> Austria -> Poland -> Czechia -> Back Home'''
             <img className=" map roundedEdges" style={{ border: '2px solid black' }} src={Journey} alt='text'></img>
           </p>
         </div>

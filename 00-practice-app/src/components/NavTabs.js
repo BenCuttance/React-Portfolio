@@ -1,11 +1,8 @@
 import React from 'react';
-import profile from '../images/profile.jpg'
 import profile3rd from '../images/profile3rd.jpg'
+import stylessheet from '../styles/style.css'
 
-import styleSheet from '../styles/style.css'
-
-
-
+//React styles
 const styles = {
   profile: {
     height: '120px',
@@ -39,9 +36,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-          //  TODO: Add a comment explaining what this logic is doing
+          //  If current page === this page then apply the navLinkActive css otherwise apply the nav-link ss
 
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'About' ? 'navLinkActive' : 'nav-link'}
         >
           About Me
         </a>
@@ -50,9 +47,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
-    //       //  TODO: Add a comment explaining what this logic is doing
+    
 
-          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Portfolio' ? 'navLinkActive' : 'nav-link'}
         >
           Portfolio
         </a>
@@ -61,9 +58,9 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
-    //       //  TODO: Add a comment explaining what this logic is doing
+    
 
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Resume' ? 'navLinkActive' : 'nav-link'}
         >
          Resume
         </a>
@@ -71,10 +68,10 @@ function NavTabs({ currentPage, handlePageChange }) {
         <li className="nav-item">
         <a
           href="#contact"
-    //       //  TODO: Add a comment explaining what this logic is doing
+    
 
           onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Contact' ? 'navLinkActive' : 'nav-link'}
         >
           Contact
         </a>

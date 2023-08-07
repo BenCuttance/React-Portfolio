@@ -22,7 +22,7 @@ const styles = {
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
-  // TODO: Add a comment describing the functionality of this method
+  // Renders users the component as a prop depending on which link has been s
   const renderPage = () => {
   
     if (currentPage === 'Contact') {
@@ -44,7 +44,6 @@ export default function PortfolioContainer() {
     <div className='green'>
       
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
 
       

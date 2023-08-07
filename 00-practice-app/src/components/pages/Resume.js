@@ -1,6 +1,6 @@
 import React from 'react';
-// import ResumeTemplate from './public/ResumeTemplate.jpg'
 
+// Arrays for front and back end skills
 const frontEndSkills = [
   { frontEnd: "HTML (Hypertext Markup Language)" },
   { frontEnd: "CSS (Cascading Style Sheets)" },
@@ -17,7 +17,7 @@ const backEndSkills = [
   { BackEnd: 'Restful API\'s' },
   { BackEnd: 'OAuth' },
 ]
-
+// Functions  that render the arrays to the page
 function FrontEnd({ skills }) {
   return (
     <ul>
@@ -42,22 +42,7 @@ const resumeFile = 'http://localhost:3000/#resume/ResumeTemplate.jpg'
 
 
 export default function Resume() {
-  const downloadFileAtURL = (url) => {
-    fetch(url).then(response => response.blob().then(blob => {
-      const blobURL = window.URL.createObjectURL(new Blob([blob]))
-      const aTag = document.createElement('a')
-      aTag.href = blobURL
-
-      aTag.setAttribute('download', 'ResumeTemplate.jpg')
-      document.body.appendChild(aTag)
-      aTag.click()
-      aTag.remove();
-
-    }))
-
-
-  }
-
+ 
   return (
     <div style={{paddingBottom:'50px'}}>
       <h1 className='pageTitle'>Resume</h1>

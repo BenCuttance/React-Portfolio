@@ -7,6 +7,7 @@ import readMe from '../../images/ReadMe.png'
 import googleMaps from '../../images/googleMaps.avif'
 
 
+// Array of my projects. With title, img src and link to the github page
 const projects = [
 {title: 'Group Project Three - Coming Soon (Different Link currently in use)', img: placeholder, link: 'https://github.com/BenCuttance/TechBlog-Wk14'}, 
 {title: 'Project Inventory - Group Project Two', img: projectInventory, link: 'https://github.com/retnodamayanti/Project_Inventory'},
@@ -16,7 +17,7 @@ const projects = [
 {title: 'Password Generator', img: javaScript, link: 'https://github.com/BenCuttance/Password-Generator'},
 ]
 
-
+// Function that will render the project array 
 function Project ({project}) {
 return (
   <article className='projectContainer'>
@@ -29,8 +30,6 @@ return (
 }
 export default function Portfolio() {
   return (
-
-
 
     <section className='projectSection' >
       <h2 style={{color:'White'}}>Portfolio</h2>
