@@ -37,13 +37,25 @@ const frontEndSkills = [
     )
   }
 
+const resumeFile = 'http://localhost:3000/resumeFile_md.pdf' 
+
 export default function Resume() {
+  const downloadFileAtURL = (url) => {
+
+    const aTag = document.createElement('a')
+    aTag.href = url
+    aTag.setAttribute('download', 'resumeFile_md.pdf')
+    document.body.appendChild(aTag)
+    aTag.click()
+    aTag.remove();
+  }
+  
   return (
     <div >
       <h1 className='pageTitle'>About Page</h1>
       <div className="card card text-bg-light mb-3 card-body" style={{ margin: '20px' }}>
         <h2 className="card-title" style={{ lineHeight: '2' }}>Skill set</h2>
-        <h6>Download my <a href='#resume' >resume here</a>
+        <h6>Download my <a onClick={()=> {downloadFileAtURL(resumeFile)}} href='#resume' >resume here</a>
         </h6>  
         <h5> Course Work </h5>
         <ul>
